@@ -15,6 +15,7 @@
 		096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */; };
 		096A63DD1D1A9A4A00B08AFA /* ReferenceProject_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63DC1D1A9A4A00B08AFA /* ReferenceProject_iOSTests.m */; };
 		096A63E81D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63E71D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m */; };
+		096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		096A63E31D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferenceProject_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096A63E71D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceProject_iOSUITests.m; sourceTree = "<group>"; };
 		096A63E91D1A9A4A00B08AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthentationViewController.h; sourceTree = "<group>"; };
+		096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthentationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				096A63C61D1A9A4A00B08AFA /* AppDelegate.m */,
 				096A63C81D1A9A4A00B08AFA /* ViewController.h */,
 				096A63C91D1A9A4A00B08AFA /* ViewController.m */,
+				096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */,
+				096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */,
 				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
 				096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			files = (
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
+				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
 				096A63C41D1A9A4A00B08AFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				096A63EE1D1A9A4A00B08AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		096A63EF1D1A9A4A00B08AFA /* Build configuration list for PBXNativeTarget "ReferenceProject_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				096A63F11D1A9A4A00B08AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		096A63F21D1A9A4A00B08AFA /* Build configuration list for PBXNativeTarget "ReferenceProject_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				096A63F41D1A9A4A00B08AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

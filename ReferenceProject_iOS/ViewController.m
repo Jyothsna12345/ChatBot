@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    collectionArr = @[@"Facebook",@"Google+",@"Maps",@"Forget Password",@"Remember Me",@"Change Password",@"Image Upload",@"File Upload",@"Image Compression",@"CustomFont",@"Theme",@"LocaliZation",].mutableCopy;
+    collectionArr = @[@"Facebook",@"Google+",@"Maps",@"Forget Password",@"Authentication",@"Change Password",@"Sign Up",@"Image Upload",@"File Upload",@"Image Compression",@"CustomFont",@"Theme",@"LocaliZation",].mutableCopy;
        self.navigationController.navigationBarHidden = YES;
 
 
@@ -59,8 +59,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-   
+    [self redirectingControllerAccordingtoSelection:indexPath];
     
 }
 
@@ -74,6 +73,14 @@
     return returnSize;
 }
 
+-(void)redirectingControllerAccordingtoSelection:(NSIndexPath *)indexPath
+{
+
+    if (indexPath.item == 4) {
+     [self performSegueWithIdentifier:@"hometoAuth" sender:indexPath];
+    }
+
+}
 
 
 
