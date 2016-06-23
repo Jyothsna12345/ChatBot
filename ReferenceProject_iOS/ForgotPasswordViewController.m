@@ -7,9 +7,16 @@
 //
 
 #import "ForgotPasswordViewController.h"
+#import "ForgotPasswordView.h"
+#import "Postman.h"
 
 @interface ForgotPasswordViewController ()
+{
 
+    Postman *postman;
+    ForgotPasswordView *forgotPasswordView;
+
+}
 @end
 
 @implementation ForgotPasswordViewController
@@ -17,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBarHidden = NO;
+    postman =[[Postman alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +42,35 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)forgotPasswordButtonAction:(id)sender {
+
+        if (forgotPasswordView == nil)
+        {
+            forgotPasswordView = [[ForgotPasswordView alloc] init];
+        }
+    
+        [forgotPasswordView showView];
+    [self DemoAPI];
+
+}
+
+
+
+-(void)DemoAPI
+{
+
+ [postman get:@"http://shivaji.vmokshagroup.com:8282/category" withParameters:nil success:^(NSURLSessionDataTask *operation, id responseObject) {
+ 
+     NSLog(@"%@",responseObject);
+     
+ } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+     NSLog(@"%@",error);
+ }];
+    
+    
+
+}
+
+
 
 @end

@@ -9,6 +9,7 @@
 #import "SignUpViewController.h"
 #import "Postman.h"
 #import "Constant.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 @interface SignUpViewController ()
 {
     UIControl *activeField;
@@ -18,9 +19,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordtextField;
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
-@property (weak, nonatomic) IBOutlet UIButton *signupFacebookButton;
+@property (weak, nonatomic) IBOutlet UITextField *mobileNumbertextField;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 
 
 @end
@@ -32,7 +34,7 @@
     // Do any additional setup after loading the view.
     postman =[[Postman alloc]init];
     self.navigationController.navigationBarHidden = NO;
-
+   
 
 }
 
@@ -64,7 +66,7 @@
     self.emailTextField.text = @"";
     self.passwordtextField.text = @"";
     self.nameTextField.text =@"";
-    
+    self.mobileNumbertextField.text = @"";
     
 }
 
@@ -102,22 +104,6 @@
     activeField = nil;
 }
 
-
-
-
-
-
-
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 - (IBAction)signupButtonAction:(id)sender {
     [self.view endEditing:YES];
@@ -159,9 +145,6 @@
     
 }
 
-
-
-
 - (BOOL)validateEntries
 {
     BOOL goodToGo = YES;
@@ -200,7 +183,7 @@
     }
     if (!goodToGo)
     {
-       // [self mbProgress:mutableString];
+        [self mbProgress:mutableString];
     }
     return goodToGo;
 }
@@ -217,17 +200,17 @@
 }
 
 
-//- (void)mbProgress:(NSString*)message{
-//    MBProgressHUD *hubHUD=[MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-//    hubHUD.mode=MBProgressHUDModeText;
-//    hubHUD.detailsLabelText=message;
-//    hubHUD.detailsLabelFont=[UIFont systemFontOfSize:15];
-//    hubHUD.margin=20.f;
-//    hubHUD.yOffset=150.f;
-//    hubHUD.removeFromSuperViewOnHide = YES;
-//    [hubHUD hide:YES afterDelay:2];
-//    
-//}
+- (void)mbProgress:(NSString*)message{
+    MBProgressHUD *hubHUD=[MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    hubHUD.mode=MBProgressHUDModeText;
+    hubHUD.detailsLabelText=message;
+    hubHUD.detailsLabelFont=[UIFont systemFontOfSize:15];
+    hubHUD.margin=20.f;
+    hubHUD.yOffset=150.f;
+    hubHUD.removeFromSuperViewOnHide = YES;
+    [hubHUD hide:YES afterDelay:2];
+    
+}
 
 
 
