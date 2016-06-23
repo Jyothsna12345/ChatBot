@@ -19,6 +19,8 @@
 		096B53A51D1BAE1500004D18 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A21D1BAE1500004D18 /* Constant.m */; };
 		096B53A61D1BAE1500004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A41D1BAE1500004D18 /* Postman.m */; };
 		096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A81D1BAECB00004D18 /* SignUpViewController.m */; };
+		096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */; };
+		096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		096B53A41D1BAE1500004D18 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
 		096B53A71D1BAECB00004D18 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		096B53A81D1BAECB00004D18 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		096B53AA1D1BB36200004D18 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 				096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */,
 				096B53A71D1BAECB00004D18 /* SignUpViewController.h */,
 				096B53A81D1BAECB00004D18 /* SignUpViewController.m */,
+				096B53AA1D1BB36200004D18 /* ChangePasswordViewController.h */,
+				096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */,
+				096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */,
+				096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */,
 				096B53A11D1BAE1500004D18 /* Constant.h */,
 				096B53A21D1BAE1500004D18 /* Constant.m */,
 				096B53A31D1BAE1500004D18 /* Postman.h */,
@@ -366,10 +376,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				096B53A61D1BAE1500004D18 /* Postman.m in Sources */,
+				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
 				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
 				096B53A51D1BAE1500004D18 /* Constant.m in Sources */,
+				096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */,
 				096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */,
 				096A63C41D1A9A4A00B08AFA /* main.m in Sources */,
 			);
