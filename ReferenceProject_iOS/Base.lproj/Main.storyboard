@@ -267,7 +267,7 @@
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile No" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J8C-kh-xEn">
                                                                 <rect key="frame" x="10" y="0.0" width="300" height="35"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" secureTextEntry="YES"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -592,8 +592,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nqh-HX-1JY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aCj-Fa-VlI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="haY-Mf-41u">
                                     <size key="itemSize" width="208" height="188"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -628,6 +632,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="kpF-Pi-dFk" secondAttribute="trailing" id="Lr4-J9-6xY"/>
                                             <constraint firstItem="kpF-Pi-dFk" firstAttribute="top" secondItem="Jre-il-jUc" secondAttribute="top" id="QZg-Sl-IxZ"/>
@@ -644,10 +649,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Nqh-HX-1JY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8yj-js-JSx"/>
                             <constraint firstAttribute="trailing" secondItem="aCj-Fa-VlI" secondAttribute="trailing" id="CvH-Cz-LSl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aCj-Fa-VlI" secondAttribute="bottom" id="F0B-EA-ohU"/>
+                            <constraint firstAttribute="trailing" secondItem="Nqh-HX-1JY" secondAttribute="trailing" id="MKc-nO-vfz"/>
                             <constraint firstItem="aCj-Fa-VlI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SvI-Vd-Q9N"/>
+                            <constraint firstItem="Nqh-HX-1JY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZDJ-t8-m0d"/>
                             <constraint firstItem="aCj-Fa-VlI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ltn-u1-rH3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nqh-HX-1JY" secondAttribute="bottom" id="uBN-BN-zON"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xIz-qv-Xk0"/>
