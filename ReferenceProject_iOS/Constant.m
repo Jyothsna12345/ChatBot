@@ -12,7 +12,7 @@
 
 
 //Developement
-//NSString *const pBaseUrl = @"http://shivaji.vmokshagroup.com:8811/";
+NSString *const pBaseUrl = @"http://shivaji.vmokshagroup.com:8811/";
 
 NSString *const pLoginUrl = @"auth/login";
 NSString *const pCategory = @"category";
