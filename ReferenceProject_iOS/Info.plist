@@ -39,6 +39,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans</string>
 	</array>
 </dict>
 </plist>

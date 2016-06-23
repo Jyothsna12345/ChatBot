@@ -22,10 +22,14 @@
 		096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */; };
 		096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
+		DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF781D1BE9BB0063E3C0 /* Kannada.json */; };
+		DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7A1D1BE9C90063E3C0 /* English.json */; };
+		DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */; };
 		DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */; };
 		DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */; };
 		DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */; };
 		DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */; };
+		DAC079921D1BCF5000BE0FCE /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,9 @@
 		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DA51EF781D1BE9BB0063E3C0 /* Kannada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kannada.json; sourceTree = "<group>"; };
+		DA51EF7A1D1BE9C90063E3C0 /* English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = English.json; sourceTree = "<group>"; };
+		DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hindi.json; sourceTree = "<group>"; };
 		DA9CDBDA1D1BB8EE008B7E86 /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeViewController.h; path = ../ThemeViewController.h; sourceTree = "<group>"; };
 		DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeViewController.m; path = ../ThemeViewController.m; sourceTree = "<group>"; };
 		DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontViewController.h; sourceTree = "<group>"; };
@@ -84,6 +91,7 @@
 		DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeViewController.h; sourceTree = "<group>"; };
 		DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeViewController.m; sourceTree = "<group>"; };
 		DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +214,7 @@
 				DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */,
 				DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */,
 				DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */,
+				DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */,
 			);
 			name = CustomFont;
 			sourceTree = "<group>";
@@ -215,6 +224,9 @@
 			children = (
 				DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */,
 				DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */,
+				DA51EF781D1BE9BB0063E3C0 /* Kannada.json */,
+				DA51EF7A1D1BE9C90063E3C0 /* English.json */,
+				DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */,
 			);
 			name = Localization;
 			sourceTree = "<group>";
@@ -390,10 +402,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */,
+				DAC079921D1BCF5000BE0FCE /* OpenSans.ttf in Resources */,
 				DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */,
 				096A63CF1D1A9A4A00B08AFA /* Assets.xcassets in Resources */,
 				096A63CD1D1A9A4A00B08AFA /* Main.storyboard in Resources */,
+				DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */,
+				DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
