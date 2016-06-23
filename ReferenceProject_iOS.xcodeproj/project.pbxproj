@@ -28,11 +28,11 @@
 		DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF781D1BE9BB0063E3C0 /* Kannada.json */; };
 		DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7A1D1BE9C90063E3C0 /* English.json */; };
 		DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */; };
+		DA51EF821D1C135B0063E3C0 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF801D1C13410063E3C0 /* OpenSans-ExtraBoldItalic.ttf */; };
+		DA51EF831D1C135B0063E3C0 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF811D1C13460063E3C0 /* OpenSans.ttf */; };
 		DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */; };
 		DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */; };
 		DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */; };
-		DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */; };
-		DAC079921D1BCF5000BE0FCE /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,14 +90,14 @@
 		DA51EF781D1BE9BB0063E3C0 /* Kannada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kannada.json; sourceTree = "<group>"; };
 		DA51EF7A1D1BE9C90063E3C0 /* English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = English.json; sourceTree = "<group>"; };
 		DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hindi.json; sourceTree = "<group>"; };
+		DA51EF801D1C13410063E3C0 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		DA51EF811D1C13460063E3C0 /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = SOURCE_ROOT; };
 		DA9CDBDA1D1BB8EE008B7E86 /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeViewController.h; path = ../ThemeViewController.h; sourceTree = "<group>"; };
 		DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeViewController.m; path = ../ThemeViewController.m; sourceTree = "<group>"; };
 		DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontViewController.h; sourceTree = "<group>"; };
 		DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontViewController.m; sourceTree = "<group>"; };
 		DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeViewController.h; sourceTree = "<group>"; };
 		DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeViewController.m; sourceTree = "<group>"; };
-		DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
-		DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +219,8 @@
 			children = (
 				DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */,
 				DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */,
-				DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */,
-				DAC079911D1BCF3000BE0FCE /* OpenSans.ttf */,
+				DA51EF801D1C13410063E3C0 /* OpenSans-ExtraBoldItalic.ttf */,
+				DA51EF811D1C13460063E3C0 /* OpenSans.ttf */,
 			);
 			name = CustomFont;
 			sourceTree = "<group>";
@@ -411,9 +411,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA51EF821D1C135B0063E3C0 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				DA51EF831D1C135B0063E3C0 /* OpenSans.ttf in Resources */,
 				DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */,
-				DAC079921D1BCF5000BE0FCE /* OpenSans.ttf in Resources */,
-				DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */,
 				096A63CF1D1A9A4A00B08AFA /* Assets.xcassets in Resources */,
 				096B53B41D1BE1BF00004D18 /* ForgotPasswordView.xib in Resources */,
@@ -493,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */,
+				DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
