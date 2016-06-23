@@ -27,6 +27,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden=NO;
     self.navigationItem.hidesBackButton=NO;
+    
     //themeValueArray=@[@"background",@"nature",@"water",@"red"]; // For Image Background
     themeValueArray=@[@"Red",@"Blue",@"Green"];
     defaultValue=[NSUserDefaults standardUserDefaults];
@@ -75,6 +76,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 10;
 }
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    view.tintColor=selectedColor;
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 // _backGroundImageView.image=[UIImage imageNamed:themeValueArray[indexPath.section]];
     [self getTheColor:(int)indexPath.section];
@@ -84,20 +88,20 @@
 }
 -(void)getTheColor:(int)value{
       _backGroundImageView.hidden=YES;
-    switch (value) {
+        switch (value) {
         case 0:
             self.view.backgroundColor=[UIColor redColor];
             [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
             _selectThemeLabel.textColor=[UIColor redColor];
             selectedColor =[UIColor redColor];
-            _themeTableView.backgroundColor=[UIColor redColor];
+                [_themeTableView setBackgroundColor:[UIColor redColor]];
             break;
         case 1:
             self.view.backgroundColor=[UIColor blueColor];
             [self.navigationController.navigationBar setTintColor:[UIColor blueColor]];
             _selectThemeLabel.textColor=[UIColor blueColor];
              selectedColor =[UIColor blueColor];
-            _themeTableView.backgroundColor=[UIColor blueColor];
+            [_themeTableView setBackgroundColor:[UIColor blueColor]];
             break;
         case 2:
             self.view.backgroundColor=[UIColor greenColor];
