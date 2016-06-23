@@ -84,8 +84,8 @@
 -(void)redirectingControllerAccordingtoSelection:(NSIndexPath *)indexPath
 {
 
-    if (indexPath.item == 4) {
-     [self performSegueWithIdentifier:@"hometoAuth" sender:indexPath];
+    if (indexPath.item == 6) {
+     [self performSegueWithIdentifier:@"hometoSignUp" sender:indexPath];
     }
 
 }

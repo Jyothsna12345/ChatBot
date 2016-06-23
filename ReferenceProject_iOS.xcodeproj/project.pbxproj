@@ -16,6 +16,10 @@
 		096A63DD1D1A9A4A00B08AFA /* ReferenceProject_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63DC1D1A9A4A00B08AFA /* ReferenceProject_iOSTests.m */; };
 		096A63E81D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63E71D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m */; };
 		096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */; };
+		096B53A51D1BAE1500004D18 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A21D1BAE1500004D18 /* Constant.m */; };
+		096B53A61D1BAE1500004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A41D1BAE1500004D18 /* Postman.m */; };
+		096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A81D1BAECB00004D18 /* SignUpViewController.m */; };
+		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,15 @@
 		096A63E91D1A9A4A00B08AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthentationViewController.h; sourceTree = "<group>"; };
 		096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthentationViewController.m; sourceTree = "<group>"; };
+		096B53A11D1BAE1500004D18 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		096B53A21D1BAE1500004D18 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		096B53A31D1BAE1500004D18 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
+		096B53A41D1BAE1500004D18 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
+		096B53A71D1BAECB00004D18 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		096B53A81D1BAECB00004D18 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +102,8 @@
 				096A63DB1D1A9A4A00B08AFA /* ReferenceProject_iOSTests */,
 				096A63E61D1A9A4A00B08AFA /* ReferenceProject_iOSUITests */,
 				096A63C01D1A9A4A00B08AFA /* Products */,
+				BCD6F96D6E8B307A8416EC05 /* Pods */,
+				711570AFE09485C09E168F4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +126,12 @@
 				096A63C91D1A9A4A00B08AFA /* ViewController.m */,
 				096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */,
 				096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */,
+				096B53A71D1BAECB00004D18 /* SignUpViewController.h */,
+				096B53A81D1BAECB00004D18 /* SignUpViewController.m */,
+				096B53A11D1BAE1500004D18 /* Constant.h */,
+				096B53A21D1BAE1500004D18 /* Constant.m */,
+				096B53A31D1BAE1500004D18 /* Postman.h */,
+				096B53A41D1BAE1500004D18 /* Postman.m */,
 				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
 				096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */,
@@ -145,6 +167,23 @@
 			path = ReferenceProject_iOSUITests;
 			sourceTree = "<group>";
 		};
+		711570AFE09485C09E168F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD6F96D6E8B307A8416EC05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */,
+				3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 096A63EC1D1A9A4A00B08AFA /* Build configuration list for PBXNativeTarget "ReferenceProject_iOS" */;
 			buildPhases = (
+				7381725068D0B64C106C53A5 /* Check Pods Manifest.lock */,
 				096A63BB1D1A9A4A00B08AFA /* Sources */,
 				096A63BC1D1A9A4A00B08AFA /* Frameworks */,
 				096A63BD1D1A9A4A00B08AFA /* Resources */,
+				986EFF3A76CCD939BD21808C /* Embed Pods Frameworks */,
+				640D017C493710A75CC8947E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,14 +312,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		640D017C493710A75CC8947E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7381725068D0B64C106C53A5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		986EFF3A76CCD939BD21808C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		096A63BB1D1A9A4A00B08AFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096B53A61D1BAE1500004D18 /* Postman.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
 				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
+				096B53A51D1BAE1500004D18 /* Constant.m in Sources */,
+				096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */,
 				096A63C41D1A9A4A00B08AFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +510,7 @@
 		};
 		096A63ED1D1A9A4A00B08AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReferenceProject_iOS/Info.plist;
@@ -428,6 +522,7 @@
 		};
 		096A63EE1D1A9A4A00B08AFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReferenceProject_iOS/Info.plist;
