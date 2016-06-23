@@ -1,8 +1,9 @@
 //Drag Drop the "Them Images" into the "Assets.xcassets".
 //Create a array which have list of images if we use iimage as background or color name.
 //use tableview to display the image list.
-// select any image and show that image as background image.
-//store selected image in "NSUserDefault".
+// select any image or color
+// show that image or color as background.
+//store selected image or color in "NSUserDefault".
 
 
 
