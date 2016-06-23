@@ -181,7 +181,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v03-9B-oNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="-314"/>
+            <point key="canvasLocation" x="1393" y="970"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="1yl-LO-0BP">
+            <objects>
+                <viewController id="sbM-rq-KQe" customClass="ForgotPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="88e-Ht-E9e"/>
+                        <viewControllerLayoutGuide type="bottom" id="zLL-Uk-epT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ezf-Ho-4pd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTf-eW-o7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="1706"/>
+        </scene>
+        <!--Authentation View Controller-->
+        <scene sceneID="tsQ-Wu-Mkc">
+            <objects>
+                <viewController id="LH1-98-8DZ" customClass="AuthentationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C89-aS-a0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCY-ee-GY3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sW3-Nf-fmW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H87-sA-9be" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="970"/>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="yT3-AX-FNY">
+            <objects>
+                <viewController id="3xi-Ub-pLy" customClass="ChangePasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAf-yO-27P"/>
+                        <viewControllerLayoutGuide type="bottom" id="wqT-To-LMz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DTh-nm-Fnu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc2-m4-9Wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="970"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -256,6 +310,9 @@
                     <navigationItem key="navigationItem" id="xIz-qv-Xk0"/>
                     <connections>
                         <segue destination="BHZ-0s-EmH" kind="show" identifier="hometoSignUp" id="4o4-Md-Wg6"/>
+                        <segue destination="3xi-Ub-pLy" kind="show" identifier="changePassSegue" id="z02-Fs-Ldw"/>
+                        <segue destination="LH1-98-8DZ" kind="show" identifier="authSegue" id="FZl-g0-Fiw"/>
+                        <segue destination="sbM-rq-KQe" kind="show" identifier="forgetPassSegu" id="R1W-7S-Byl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

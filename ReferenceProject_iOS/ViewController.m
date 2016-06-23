@@ -84,9 +84,60 @@
 -(void)redirectingControllerAccordingtoSelection:(NSIndexPath *)indexPath
 {
 
-    if (indexPath.item == 6) {
-     [self performSegueWithIdentifier:@"hometoSignUp" sender:indexPath];
+    NSInteger itemNumer = indexPath.item;
+    
+    switch (itemNumer) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            //[self performSegueWithIdentifier:@"" sender:indexPath];
+
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"forgetPassSegu" sender:indexPath];
+
+            break;
+        case 4:
+            [self performSegueWithIdentifier:@"authSegue" sender:indexPath];
+
+            break;
+        case 5:
+            [self performSegueWithIdentifier:@"changePassSegue" sender:indexPath];
+
+            break;
+        case 6:
+             [self performSegueWithIdentifier:@"hometoSignUp" sender:indexPath];
+            break;
+        case 7:
+            
+
+            break;
+        case 8:
+            
+
+            break;
+        case 9:
+            
+
+            break;
+        case 10:
+            
+            break;
+        case 11:
+            
+            break;
+        case 12:
+            
+            break;
+        default:
+            break;
     }
+    
+   
 
 }
 
