@@ -181,6 +181,29 @@
         }
         
     }
+    
+    if (self.mobileNumbertextField.text.length == 0) {
+       goodToGo = NO;
+        if (mutableString.length > 0) {
+            [mutableString appendString:@"\nMobile number is required"];
+        } else {
+            [mutableString appendString:@"Mobile number is required"];
+        }
+    }
+    else if (![self mobileNumberIsValid:self.mobileNumbertextField.text]&&self.mobileNumbertextField.text.length!=0)
+    {
+        goodToGo = NO;
+        if (mutableString.length > 0) {
+            [mutableString appendString:@"\nPlease enter a valid mobile number"];
+        } else {
+            [mutableString appendString:@"Please enter a valid mobile number"];
+        }
+    }
+
+    
+    
+    
+    
     if (!goodToGo)
     {
         [self mbProgress:mutableString];
@@ -188,7 +211,7 @@
     return goodToGo;
 }
 
-
+// Email Address validation method
 -(BOOL)stringIsValidEmail:(NSString *)checkString
 {
     BOOL stricterFilter = NO;
@@ -198,6 +221,22 @@
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:checkString];
 }
+
+// Mobile Number validation Method
+-(BOOL)mobileNumberIsValid:(NSString *)checkNumber
+{
+    NSString *stringToBeTested = checkNumber;
+    NSString *mobileNumberPattern = @"[0-9]{9}";
+    NSPredicate *mobileNumberPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobileNumberPattern];
+    BOOL validMobileNumber = [mobileNumberPred evaluateWithObject:stringToBeTested];
+    return validMobileNumber;
+
+}
+
+
+
+
+
 
 
 - (void)mbProgress:(NSString*)message{

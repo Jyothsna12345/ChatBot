@@ -50,26 +50,9 @@
         }
     
         [forgotPasswordView showView];
-    [self DemoAPI];
-
+   
 }
 
-
-
--(void)DemoAPI
-{
-
- [postman get:@"http://shivaji.vmokshagroup.com:8282/category" withParameters:nil success:^(NSURLSessionDataTask *operation, id responseObject) {
- 
-     NSLog(@"%@",responseObject);
-     
- } failure:^(NSURLSessionDataTask *operation, NSError *error) {
-     NSLog(@"%@",error);
- }];
-    
-    
-
-}
 
 
 
