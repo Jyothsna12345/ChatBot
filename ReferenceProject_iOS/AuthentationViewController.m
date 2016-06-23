@@ -117,6 +117,8 @@
         [self parsingLoginResponseMethod:responseObject];
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         NSLog(@"success");
+    
+    
     }
           failour:^(NSURLSessionDataTask *task, NSError *error) {
               [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
@@ -154,6 +156,15 @@
         goodToGo = NO;
         [mutableString appendString:@"Email Id is required"];
     }
+    
+    else if (![self stringIsValidEmail:self.emailTextField.text]&&userName.length!=0)
+    {
+        goodToGo = NO;
+        [mutableString appendString:@"Please enter a valid Email Id"];
+    }
+    
+
+    
     if (password.length == 0)
     {
         goodToGo = NO;
@@ -164,12 +175,6 @@
         {
             [mutableString appendString:@"Password is required"];
         }
-    }
-    
-    else if (![self stringIsValidEmail:self.emailTextField.text]&&userName.length!=0)
-    {
-        goodToGo = NO;
-        [mutableString appendString:@"Please enter a valid Email Id"];
     }
     
     
