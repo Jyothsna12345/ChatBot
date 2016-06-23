@@ -17,10 +17,13 @@
 		096A63E81D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63E71D1A9A4A00B08AFA /* ReferenceProject_iOSUITests.m */; };
 		096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */; };
 		096B53A51D1BAE1500004D18 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A21D1BAE1500004D18 /* Constant.m */; };
-		096B53A61D1BAE1500004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A41D1BAE1500004D18 /* Postman.m */; };
 		096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53A81D1BAECB00004D18 /* SignUpViewController.m */; };
 		096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */; };
 		096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */; };
+		096B53B31D1BE1BF00004D18 /* ForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53B11D1BE1BF00004D18 /* ForgotPasswordView.m */; };
+		096B53B41D1BE1BF00004D18 /* ForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096B53B21D1BE1BF00004D18 /* ForgotPasswordView.xib */; };
+		096B53B71D1BECAE00004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53B61D1BECAE00004D18 /* Postman.m */; };
+		096B53BB1D1BEE9000004D18 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 096B53BA1D1BEE9000004D18 /* Info.plist */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
 		DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF781D1BE9BB0063E3C0 /* Kannada.json */; };
 		DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7A1D1BE9C90063E3C0 /* English.json */; };
@@ -59,7 +62,6 @@
 		096A63CC1D1A9A4A00B08AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		096A63D11D1A9A4A00B08AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		096A63D31D1A9A4A00B08AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096A63D81D1A9A4A00B08AFA /* ReferenceProject_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferenceProject_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096A63DC1D1A9A4A00B08AFA /* ReferenceProject_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceProject_iOSTests.m; sourceTree = "<group>"; };
 		096A63DE1D1A9A4A00B08AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,14 +72,18 @@
 		096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthentationViewController.m; sourceTree = "<group>"; };
 		096B53A11D1BAE1500004D18 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		096B53A21D1BAE1500004D18 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
-		096B53A31D1BAE1500004D18 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
-		096B53A41D1BAE1500004D18 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
 		096B53A71D1BAECB00004D18 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		096B53A81D1BAECB00004D18 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		096B53AA1D1BB36200004D18 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		096B53B01D1BE1BF00004D18 /* ForgotPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordView.h; sourceTree = "<group>"; };
+		096B53B11D1BE1BF00004D18 /* ForgotPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordView.m; sourceTree = "<group>"; };
+		096B53B21D1BE1BF00004D18 /* ForgotPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordView.xib; sourceTree = "<group>"; };
+		096B53B51D1BECAE00004D18 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
+		096B53B61D1BECAE00004D18 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
+		096B53BA1D1BEE9000004D18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,7 +165,7 @@
 				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
 				096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */,
-				096A63D31D1A9A4A00B08AFA /* Info.plist */,
+				096B53BA1D1BEE9000004D18 /* Info.plist */,
 				096A63C21D1A9A4A00B08AFA /* Supporting Files */,
 			);
 			path = ReferenceProject_iOS;
@@ -243,10 +249,10 @@
 		DA9CDBE61D1BBB72008B7E86 /* PostmanAndConstant */ = {
 			isa = PBXGroup;
 			children = (
+				096B53B51D1BECAE00004D18 /* Postman.h */,
+				096B53B61D1BECAE00004D18 /* Postman.m */,
 				096B53A11D1BAE1500004D18 /* Constant.h */,
 				096B53A21D1BAE1500004D18 /* Constant.m */,
-				096B53A31D1BAE1500004D18 /* Postman.h */,
-				096B53A41D1BAE1500004D18 /* Postman.m */,
 			);
 			name = PostmanAndConstant;
 			sourceTree = "<group>";
@@ -292,6 +298,9 @@
 			children = (
 				096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */,
 				096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */,
+				096B53B01D1BE1BF00004D18 /* ForgotPasswordView.h */,
+				096B53B11D1BE1BF00004D18 /* ForgotPasswordView.m */,
+				096B53B21D1BE1BF00004D18 /* ForgotPasswordView.xib */,
 			);
 			name = ForgotPassword;
 			sourceTree = "<group>";
@@ -407,6 +416,8 @@
 				DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */,
 				096A63CF1D1A9A4A00B08AFA /* Assets.xcassets in Resources */,
+				096B53B41D1BE1BF00004D18 /* ForgotPasswordView.xib in Resources */,
+				096B53BB1D1BEE9000004D18 /* Info.plist in Resources */,
 				096A63CD1D1A9A4A00B08AFA /* Main.storyboard in Resources */,
 				DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */,
 				DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */,
@@ -482,11 +493,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */,
-				096B53A61D1BAE1500004D18 /* Postman.m in Sources */,
+				DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
+				096B53B31D1BE1BF00004D18 /* ForgotPasswordView.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
 				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
 				096B53A51D1BAE1500004D18 /* Constant.m in Sources */,
@@ -494,6 +505,7 @@
 				DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */,
 				096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */,
 				096A63C41D1A9A4A00B08AFA /* main.m in Sources */,
+				096B53B71D1BECAE00004D18 /* Postman.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,9 +28,7 @@
 {
     manager =[AFHTTPSessionManager manager];
     requestSerializer = [AFJSONRequestSerializer serializer];
-    NSString *autoToken  =[[NSUserDefaults standardUserDefaults ]objectForKey:pAutToken];
-    AppDelegate *appDel =(AppDelegate *)[UIApplication sharedApplication].delegate;
-        manager.requestSerializer = requestSerializer;
+        [self setheadermethod];
 }
 
 
@@ -42,6 +40,10 @@
     success(task,responseObject);
 } failure:^(NSURLSessionDataTask * task, NSError *error) {
     failure(task,error);
+
+
+    
+
 }];
 }
 
@@ -67,6 +69,8 @@
 -(void)setheadermethod
 {
     [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    manager.requestSerializer = requestSerializer;
+ 
 
 }
 

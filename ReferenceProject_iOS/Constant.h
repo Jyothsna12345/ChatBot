@@ -16,7 +16,7 @@ FOUNDATION_EXPORT NSString *const UserEmail_KEY;
 
 
 FOUNDATION_EXPORT NSString *const pAutToken;
-//FOUNDATION_EXPORT NSString *const pBaseUrl;
+FOUNDATION_EXPORT NSString *const pBaseUrl;
 FOUNDATION_EXPORT NSString *const pLoginUrl;
 FOUNDATION_EXPORT NSString *const pCategory;
 FOUNDATION_EXPORT NSString *const pCreateUser;

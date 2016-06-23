@@ -12,9 +12,10 @@
 
 
 //Developement
-//NSString *const pBaseUrl = @"http://shivaji.vmokshagroup.com:8811/";
+ NSString *const pBaseUrl = @"http://raspberry-pi.vmokshagroup.com:5000/";
+//NSString *const pBaseUrl = @"http://10.10.5.12:5000/";
 
-NSString *const pLoginUrl = @"auth/login";
+NSString *const pLoginUrl = @"api/login";
 NSString *const pCategory = @"category";
 NSString *const pCreateUser = @"user/0";
 NSString *const pSubCategory = @"subcategory";
