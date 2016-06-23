@@ -22,6 +22,9 @@
 		096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */; };
 		096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
+		DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */; };
+		DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */; };
+		DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,13 @@
 		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DA9CDBDA1D1BB8EE008B7E86 /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeViewController.h; path = ../ThemeViewController.h; sourceTree = "<group>"; };
+		DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeViewController.m; path = ../ThemeViewController.m; sourceTree = "<group>"; };
+		DA9CDBDD1D1BB90A008B7E86 /* CustomeFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeFontViewController.h; sourceTree = "<group>"; };
+		DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeFontViewController.m; sourceTree = "<group>"; };
+		DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeViewController.h; sourceTree = "<group>"; };
+		DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeViewController.m; sourceTree = "<group>"; };
+		DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,20 +138,15 @@
 			children = (
 				096A63C51D1A9A4A00B08AFA /* AppDelegate.h */,
 				096A63C61D1A9A4A00B08AFA /* AppDelegate.m */,
-				096A63C81D1A9A4A00B08AFA /* ViewController.h */,
-				096A63C91D1A9A4A00B08AFA /* ViewController.m */,
-				096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */,
-				096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */,
-				096B53A71D1BAECB00004D18 /* SignUpViewController.h */,
-				096B53A81D1BAECB00004D18 /* SignUpViewController.m */,
-				096B53AA1D1BB36200004D18 /* ChangePasswordViewController.h */,
-				096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */,
-				096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */,
-				096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */,
-				096B53A11D1BAE1500004D18 /* Constant.h */,
-				096B53A21D1BAE1500004D18 /* Constant.m */,
-				096B53A31D1BAE1500004D18 /* Postman.h */,
-				096B53A41D1BAE1500004D18 /* Postman.m */,
+				DA9CDBE71D1BBB97008B7E86 /* MainViewController */,
+				DA9CDBE91D1BBBBF008B7E86 /* Authentication */,
+				DA9CDBE81D1BBBAD008B7E86 /* SignUp */,
+				DA9CDBEA1D1BBBCD008B7E86 /* ChangePassword */,
+				DA9CDBEB1D1BBBD9008B7E86 /* ForgotPassword */,
+				DA9CDBE61D1BBB72008B7E86 /* PostmanAndConstant */,
+				DA9CDBE51D1BBB5E008B7E86 /* ThemeChange */,
+				DA9CDBE31D1BBAF7008B7E86 /* CustomeFont */,
+				DA9CDBE41D1BBB06008B7E86 /* Localization */,
 				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
 				096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */,
@@ -192,6 +197,90 @@
 				3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA9CDBE31D1BBAF7008B7E86 /* CustomeFont */ = {
+			isa = PBXGroup;
+			children = (
+				DA9CDBDD1D1BB90A008B7E86 /* CustomeFontViewController.h */,
+				DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */,
+				DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */,
+			);
+			name = CustomeFont;
+			sourceTree = "<group>";
+		};
+		DA9CDBE41D1BBB06008B7E86 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */,
+				DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		DA9CDBE51D1BBB5E008B7E86 /* ThemeChange */ = {
+			isa = PBXGroup;
+			children = (
+				DA9CDBDA1D1BB8EE008B7E86 /* ThemeViewController.h */,
+				DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */,
+			);
+			name = ThemeChange;
+			sourceTree = "<group>";
+		};
+		DA9CDBE61D1BBB72008B7E86 /* PostmanAndConstant */ = {
+			isa = PBXGroup;
+			children = (
+				096B53A11D1BAE1500004D18 /* Constant.h */,
+				096B53A21D1BAE1500004D18 /* Constant.m */,
+				096B53A31D1BAE1500004D18 /* Postman.h */,
+				096B53A41D1BAE1500004D18 /* Postman.m */,
+			);
+			name = PostmanAndConstant;
+			sourceTree = "<group>";
+		};
+		DA9CDBE71D1BBB97008B7E86 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				096A63C81D1A9A4A00B08AFA /* ViewController.h */,
+				096A63C91D1A9A4A00B08AFA /* ViewController.m */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		DA9CDBE81D1BBBAD008B7E86 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				096B53A71D1BAECB00004D18 /* SignUpViewController.h */,
+				096B53A81D1BAECB00004D18 /* SignUpViewController.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		DA9CDBE91D1BBBBF008B7E86 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				096A63F51D1AA42E00B08AFA /* AuthentationViewController.h */,
+				096A63F61D1AA42E00B08AFA /* AuthentationViewController.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		DA9CDBEA1D1BBBCD008B7E86 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				096B53AA1D1BB36200004D18 /* ChangePasswordViewController.h */,
+				096B53AB1D1BB36200004D18 /* ChangePasswordViewController.m */,
+			);
+			name = ChangePassword;
+			sourceTree = "<group>";
+		};
+		DA9CDBEB1D1BBBD9008B7E86 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				096B53AD1D1BB38300004D18 /* ForgotPasswordViewController.h */,
+				096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */,
+			);
+			name = ForgotPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,13 +464,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */,
 				096B53A61D1BAE1500004D18 /* Postman.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
+				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
 				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
 				096B53A51D1BAE1500004D18 /* Constant.m in Sources */,
 				096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */,
+				DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */,
 				096B53A91D1BAECB00004D18 /* SignUpViewController.m in Sources */,
 				096A63C41D1A9A4A00B08AFA /* main.m in Sources */,
 			);

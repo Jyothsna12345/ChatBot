@@ -8,7 +8,7 @@ pod 'AFNetworking', '~> 3.0'
 end
 
 target 'ReferenceProject_iOSTests' do
-
+pod 'MBProgressHUD', '~> 0.9.2'
 end
 
 target 'ReferenceProject_iOSUITests' do

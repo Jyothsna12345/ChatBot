@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Theme View Controller-->
+        <scene sceneID="OUG-ld-sTO">
+            <objects>
+                <viewController id="ZYL-AK-Zzv" customClass="ThemeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZGo-6t-dE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="3L6-3J-udn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SFx-74-L8D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAR-ce-ltX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="-488"/>
+        </scene>
+        <!--Localize View Controller-->
+        <scene sceneID="uOp-v3-9UX">
+            <objects>
+                <viewController id="Sht-HD-Udm" customClass="LocalizeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KMm-50-YEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="tM2-Ea-Hef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ry8-4x-BFy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sv-g9-Bbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="192"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="lbr-gD-DCI">
             <objects>
@@ -313,11 +349,32 @@
                         <segue destination="3xi-Ub-pLy" kind="show" identifier="changePassSegue" id="z02-Fs-Ldw"/>
                         <segue destination="LH1-98-8DZ" kind="show" identifier="authSegue" id="FZl-g0-Fiw"/>
                         <segue destination="sbM-rq-KQe" kind="show" identifier="forgetPassSegu" id="R1W-7S-Byl"/>
+                        <segue destination="eeD-Lw-gOd" kind="show" identifier="CustomeSegue" id="eQG-2G-xqd"/>
+                        <segue destination="ZYL-AK-Zzv" kind="show" identifier="ThemeSegue" id="4Bg-G9-aV5"/>
+                        <segue destination="Sht-HD-Udm" kind="show" identifier="LocalizeSegue" id="cvd-4o-Nmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760" y="175"/>
+        </scene>
+        <!--Custome Font View Controller-->
+        <scene sceneID="vm1-qB-T7K">
+            <objects>
+                <viewController id="eeD-Lw-gOd" customClass="CustomeFontViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CRM-ro-ejP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bd4-qE-huA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wor-RO-Lyr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAU-5F-olm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="-1218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLF-ZC-rrp">
