@@ -8,6 +8,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+      self.navigationItem.hidesBackButton=NO;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,8 +23,9 @@
 		096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53AE1D1BB38300004D18 /* ForgotPasswordViewController.m */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
 		DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */; };
-		DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */; };
+		DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */; };
 		DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */; };
+		DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +79,8 @@
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DA9CDBDA1D1BB8EE008B7E86 /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeViewController.h; path = ../ThemeViewController.h; sourceTree = "<group>"; };
 		DA9CDBDB1D1BB8EE008B7E86 /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeViewController.m; path = ../ThemeViewController.m; sourceTree = "<group>"; };
-		DA9CDBDD1D1BB90A008B7E86 /* CustomeFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeFontViewController.h; sourceTree = "<group>"; };
-		DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeFontViewController.m; sourceTree = "<group>"; };
+		DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontViewController.h; sourceTree = "<group>"; };
+		DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontViewController.m; sourceTree = "<group>"; };
 		DA9CDBE01D1BB927008B7E86 /* LocalizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeViewController.h; sourceTree = "<group>"; };
 		DA9CDBE11D1BB927008B7E86 /* LocalizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeViewController.m; sourceTree = "<group>"; };
 		DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
@@ -145,7 +146,7 @@
 				DA9CDBEB1D1BBBD9008B7E86 /* ForgotPassword */,
 				DA9CDBE61D1BBB72008B7E86 /* PostmanAndConstant */,
 				DA9CDBE51D1BBB5E008B7E86 /* ThemeChange */,
-				DA9CDBE31D1BBAF7008B7E86 /* CustomeFont */,
+				DA9CDBE31D1BBAF7008B7E86 /* CustomFont */,
 				DA9CDBE41D1BBB06008B7E86 /* Localization */,
 				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
@@ -199,14 +200,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DA9CDBE31D1BBAF7008B7E86 /* CustomeFont */ = {
+		DA9CDBE31D1BBAF7008B7E86 /* CustomFont */ = {
 			isa = PBXGroup;
 			children = (
-				DA9CDBDD1D1BB90A008B7E86 /* CustomeFontViewController.h */,
-				DA9CDBDE1D1BB90A008B7E86 /* CustomeFontViewController.m */,
+				DA9CDBDD1D1BB90A008B7E86 /* CustomFontViewController.h */,
+				DA9CDBDE1D1BB90A008B7E86 /* CustomFontViewController.m */,
 				DA9CDBEC1D1BBC23008B7E86 /* OpenSans-ExtraBoldItalic.ttf */,
 			);
-			name = CustomeFont;
+			name = CustomFont;
 			sourceTree = "<group>";
 		};
 		DA9CDBE41D1BBB06008B7E86 /* Localization */ = {
@@ -389,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC079901D1BC08100BE0FCE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */,
 				096A63CF1D1A9A4A00B08AFA /* Assets.xcassets in Resources */,
 				096A63CD1D1A9A4A00B08AFA /* Main.storyboard in Resources */,
@@ -464,7 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9CDBDF1D1BB90A008B7E86 /* CustomeFontViewController.m in Sources */,
+				DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */,
 				096B53A61D1BAE1500004D18 /* Postman.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
