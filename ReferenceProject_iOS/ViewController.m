@@ -125,13 +125,13 @@
 
             break;
         case 10:
-            
+             [self performSegueWithIdentifier:@"CustomeSegue" sender:indexPath];
             break;
         case 11:
-            
+             [self performSegueWithIdentifier:@"ThemeSegue" sender:indexPath];
             break;
         case 12:
-            
+             [self performSegueWithIdentifier:@"LocalizeSegue" sender:indexPath];
             break;
         default:
             break;
