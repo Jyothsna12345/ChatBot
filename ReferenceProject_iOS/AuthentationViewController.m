@@ -117,7 +117,7 @@
         [self parsingLoginResponseMethod:responseObject];
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         NSLog(@"success");
-    
+        [self mbProgress:@"Login Successful"];
     
     }
           failour:^(NSURLSessionDataTask *task, NSError *error) {
