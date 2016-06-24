@@ -25,6 +25,11 @@
 		096B53B71D1BECAE00004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53B61D1BECAE00004D18 /* Postman.m */; };
 		096B53BB1D1BEE9000004D18 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 096B53BA1D1BEE9000004D18 /* Info.plist */; };
 		6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */; };
+		86CED1C81D1D0ACD0012A41D /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CED1C71D1D0ACD0012A41D /* FacebookViewController.m */; };
+		86CED1CD1D1D0BC30012A41D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1C91D1D0BC30012A41D /* FBSDKCoreKit.framework */; };
+		86CED1CE1D1D0BC30012A41D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */; };
+		86CED1CF1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */; };
+		86CED1D01D1D0BC30012A41D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CC1D1D0BC30012A41D /* FBSDKShareKit.framework */; };
 		DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF781D1BE9BB0063E3C0 /* Kannada.json */; };
 		DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7A1D1BE9C90063E3C0 /* English.json */; };
 		DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */; };
@@ -87,6 +92,12 @@
 		09A8B79C8AC4EDBAF76AD2E5 /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		86CED1C61D1D0ACD0012A41D /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		86CED1C71D1D0ACD0012A41D /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		86CED1C91D1D0BC30012A41D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		86CED1CC1D1D0BC30012A41D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DA51EF781D1BE9BB0063E3C0 /* Kannada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kannada.json; sourceTree = "<group>"; };
 		DA51EF7A1D1BE9C90063E3C0 /* English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = English.json; sourceTree = "<group>"; };
 		DA51EF7C1D1BE9DC0063E3C0 /* Hindi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hindi.json; sourceTree = "<group>"; };
@@ -105,7 +116,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CED1CF1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework in Frameworks */,
 				6621248E18C37F79AF39D2A8 /* libPods-ReferenceProject_iOS.a in Frameworks */,
+				86CED1D01D1D0BC30012A41D /* FBSDKShareKit.framework in Frameworks */,
+				86CED1CD1D1D0BC30012A41D /* FBSDKCoreKit.framework in Frameworks */,
+				86CED1CE1D1D0BC30012A41D /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +166,14 @@
 		096A63C11D1A9A4A00B08AFA /* ReferenceProject_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				86CED1C91D1D0BC30012A41D /* FBSDKCoreKit.framework */,
+				86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */,
+				86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */,
+				86CED1CC1D1D0BC30012A41D /* FBSDKShareKit.framework */,
 				096A63C51D1A9A4A00B08AFA /* AppDelegate.h */,
 				096A63C61D1A9A4A00B08AFA /* AppDelegate.m */,
+				86CED1C61D1D0ACD0012A41D /* FacebookViewController.h */,
+				86CED1C71D1D0ACD0012A41D /* FacebookViewController.m */,
 				DA9CDBE71D1BBB97008B7E86 /* MainViewController */,
 				DA9CDBE91D1BBBBF008B7E86 /* Authentication */,
 				DA9CDBE81D1BBBAD008B7E86 /* SignUp */,
@@ -495,6 +516,7 @@
 			files = (
 				DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
+				86CED1C81D1D0ACD0012A41D /* FacebookViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096B53B31D1BE1BF00004D18 /* ForgotPasswordView.m in Sources */,
@@ -647,7 +669,12 @@
 			baseConfigurationReference = 164CDB36B4E01F3E42CD172B /* Pods-ReferenceProject_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReferenceProject_iOS",
+				);
 				INFOPLIST_FILE = ReferenceProject_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vmoksha.ReferenceProject-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +686,12 @@
 			baseConfigurationReference = 3426637F700C4EC8776CD1BD /* Pods-ReferenceProject_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReferenceProject_iOS",
+				);
 				INFOPLIST_FILE = ReferenceProject_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vmoksha.ReferenceProject-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

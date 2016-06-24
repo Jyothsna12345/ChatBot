@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -795,6 +794,7 @@
                         <segue destination="eeD-Lw-gOd" kind="show" identifier="CustomeSegue" id="eQG-2G-xqd"/>
                         <segue destination="ZYL-AK-Zzv" kind="show" identifier="ThemeSegue" id="4Bg-G9-aV5"/>
                         <segue destination="Sht-HD-Udm" kind="show" identifier="LocalizeSegue" id="cvd-4o-Nmr"/>
+                        <segue destination="yqW-yn-d6Q" kind="show" identifier="hometofacebook" id="FFa-qW-h9f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -882,8 +882,82 @@
             </objects>
             <point key="canvasLocation" x="54" y="184"/>
         </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="6zO-dD-TTN">
+            <objects>
+                <viewController id="yqW-yn-d6Q" customClass="FacebookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNd-iN-od3"/>
+                        <viewControllerLayoutGuide type="bottom" id="v1c-Zr-7mD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0zs-pC-tSb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaZ-pA-ZbY">
+                                <rect key="frame" x="200" y="460" width="215" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="09m-in-s29"/>
+                                    <constraint firstAttribute="height" constant="42" id="ENG-7b-520"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" backgroundImage="fbook"/>
+                                <connections>
+                                    <action selector="FacebookLogin:" destination="yqW-yn-d6Q" eventType="touchUpInside" id="DEC-oR-MtY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-jZ-4mC">
+                                <rect key="frame" x="254" y="97" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="EjN-5w-mOV"/>
+                                    <constraint firstAttribute="width" constant="93" id="NhN-hI-4xQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-Au-2AV">
+                                <rect key="frame" x="89" y="220" width="437" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="437" id="Ve3-W9-wmm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-QG-7WO">
+                                <rect key="frame" x="89" y="255" width="437" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="437" id="lHt-Ep-ZUK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fCy-jZ-4mC" firstAttribute="centerX" secondItem="0zs-pC-tSb" secondAttribute="centerX" id="20z-EU-ztl"/>
+                            <constraint firstItem="fCy-jZ-4mC" firstAttribute="top" secondItem="xNd-iN-od3" secondAttribute="bottom" constant="33" id="92E-mA-kPK"/>
+                            <constraint firstItem="OaZ-pA-ZbY" firstAttribute="centerX" secondItem="0zs-pC-tSb" secondAttribute="centerX" constant="7.5" id="NvF-GW-6mv"/>
+                            <constraint firstItem="OaZ-pA-ZbY" firstAttribute="centerY" secondItem="0zs-pC-tSb" secondAttribute="centerY" constant="181" id="YMv-ke-c0f"/>
+                            <constraint firstItem="dO6-Au-2AV" firstAttribute="top" secondItem="fCy-jZ-4mC" secondAttribute="bottom" constant="30" id="Z3T-xV-c0P"/>
+                            <constraint firstItem="dO6-Au-2AV" firstAttribute="centerX" secondItem="0zs-pC-tSb" secondAttribute="centerX" constant="7.5" id="ayU-Cl-XNN"/>
+                            <constraint firstItem="o6X-QG-7WO" firstAttribute="centerX" secondItem="0zs-pC-tSb" secondAttribute="centerX" constant="7.5" id="spt-3R-jIz"/>
+                            <constraint firstItem="o6X-QG-7WO" firstAttribute="top" secondItem="dO6-Au-2AV" secondAttribute="bottom" constant="14" id="zGL-Ky-Jfw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Facebookbtn" destination="OaZ-pA-ZbY" id="GcV-TH-l8E"/>
+                        <outlet property="lblEmail" destination="o6X-QG-7WO" id="pPS-BT-jr1"/>
+                        <outlet property="lblUsername" destination="dO6-Au-2AV" id="yU4-zj-n9c"/>
+                        <outlet property="profilePicture" destination="fCy-jZ-4mC" id="hlO-0b-3Gn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljV-L0-bqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="-705"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="700" height="490"/>
+        <image name="fbook" width="700" height="490"/>
     </resources>
 </document>
