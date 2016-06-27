@@ -26,6 +26,7 @@
     [GIDSignIn sharedInstance].uiDelegate=self;
      [GIDSignIn sharedInstance].delegate =self;
     googlesignIn=(GIDSignInButton*)googlebtn;
+    self.navigationController.navigationBarHidden=NO;
     }
 
 - (void)didReceiveMemoryWarning {
