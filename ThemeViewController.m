@@ -5,8 +5,15 @@
 // show that image or color as background.
 //store selected image or color in "NSUserDefault".
 
-
-
+//write fallowing code in appdelegate lauchoption to change the color of navigation bar in all viewcontroller
+/*  NSUserDefaults *defaultvalue=[NSUserDefaults standardUserDefaults];
+ NSString *selectedColor=[defaultvalue valueForKey:@"selectedColor"];
+ if ([selectedColor isEqualToString:@"redColor"]) {
+ [[UINavigationBar appearance]setTintColor:[UIColor redColor]];
+ }else  if ([selectedColor isEqualToString:@"blueColor"]) {
+ [[UINavigationBar appearance]setTintColor:[UIColor blueColor]];
+ }else  [[UINavigationBar appearance]setTintColor:[UIColor greenColor]];
+ */
 #import "ThemeViewController.h"
 
 @interface ThemeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -95,6 +102,7 @@
             [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
             _selectThemeLabel.textColor=[UIColor redColor];
             selectedColor =[UIColor redColor];
+                [defaultValue setValue:@"redColor" forKey:@"selectedColor"];
                 [_themeTableView setBackgroundColor:[UIColor redColor]];
             break;
         case 1:
@@ -102,6 +110,7 @@
             [self.navigationController.navigationBar setTintColor:[UIColor blueColor]];
             _selectThemeLabel.textColor=[UIColor blueColor];
              selectedColor =[UIColor blueColor];
+                 [defaultValue setValue:@"blueColor" forKey:@"selectedColor"];
             [_themeTableView setBackgroundColor:[UIColor blueColor]];
             break;
         case 2:
@@ -109,6 +118,7 @@
             [self.navigationController.navigationBar setTintColor:[UIColor greenColor]];
             _selectThemeLabel.textColor=[UIColor greenColor];
              selectedColor =[UIColor greenColor];
+            [defaultValue setValue:@"greenColor" forKey:@"selectedColor"];
             _themeTableView.backgroundColor=[UIColor greenColor];
             break;
         default:

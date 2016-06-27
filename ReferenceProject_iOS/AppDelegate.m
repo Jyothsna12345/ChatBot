@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSUserDefaults *defaultvalue=[NSUserDefaults standardUserDefaults];
+    NSString *selectedColor=[defaultvalue valueForKey:@"selectedColor"];
+    if ([selectedColor isEqualToString:@"redColor"]) {
+         [[UINavigationBar appearance]setTintColor:[UIColor redColor]];
+    }else  if ([selectedColor isEqualToString:@"blueColor"]) {
+        [[UINavigationBar appearance]setTintColor:[UIColor blueColor]];
+    }else  [[UINavigationBar appearance]setTintColor:[UIColor greenColor]];
+   
     return YES;
 }
 
@@ -41,5 +48,4 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 @end
