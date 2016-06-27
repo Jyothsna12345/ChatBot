@@ -18,11 +18,60 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb267717016920312</string>
+            </array>
+        </dict>
+    </array>
+   <key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
+    <key>FacebookAppID</key>
+    <string>267717016920312</string>
+    <key>FacebookDisplayName</key>
+    <string>ReferenceProject_iOS</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+   <key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>akamaihd.net</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+            <key>facebook.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+            <key>fbcdn.net</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+    <key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

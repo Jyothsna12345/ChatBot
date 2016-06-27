@@ -88,7 +88,7 @@
     
     switch (itemNumer) {
         case 0:
-            
+           [self performSegueWithIdentifier:@"hometofacebook" sender:indexPath];
             break;
         case 1:
             
