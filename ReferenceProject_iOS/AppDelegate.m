@@ -16,15 +16,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   //For Theme Change
     NSUserDefaults *defaultvalue=[NSUserDefaults standardUserDefaults];
     NSString *selectedColor=[defaultvalue valueForKey:@"selectedColor"];
     if ([selectedColor isEqualToString:@"redColor"]) {
-         [[UINavigationBar appearance]setTintColor:[UIColor redColor]];
+        [[UINavigationBar appearance]setTintColor:[UIColor redColor]];
     }else  if ([selectedColor isEqualToString:@"blueColor"]) {
         [[UINavigationBar appearance]setTintColor:[UIColor blueColor]];
     }else  [[UINavigationBar appearance]setTintColor:[UIColor greenColor]];
-   
-    return YES;
+    
+    
+    
+    
+    
+     //Add this code for Facebook launching purpose.
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
+    
 }
 //Add also this code
 - (BOOL)application:(UIApplication *)application
