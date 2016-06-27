@@ -25,13 +25,11 @@
         [[UINavigationBar appearance]setTintColor:[UIColor blueColor]];
     }else  [[UINavigationBar appearance]setTintColor:[UIColor greenColor]];
     
-    
-    
-    
-    
-     //Add this code for Facebook launching purpose.
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
+//Add this code for Facebook launching purpose.
+     [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
+    [GIDSignIn sharedInstance].clientID = @"414098840373-p9adjarr5klc4s7rem1ugvqlh1im7v12.apps.googleusercontent.com";
+    return YES;
     
 }
 //Add also this code
@@ -39,11 +37,17 @@
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                          openURL:url
-                                                sourceApplication:sourceApplication
-                                                       annotation:annotation];
+    NSString *str=[url absoluteString];
+    if ([str containsString:@"fb"]) {
+        return [[FBSDKApplicationDelegate sharedInstance]application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
+    else return [[GIDSignIn sharedInstance]handleURL:url sourceApplication:sourceApplication annotation:annotation];
 }
+-(void)signIn:(GIDSignIn *)signIn didDisconnectWithUser:(GIDGoogleUser *)user withError:(NSError *)error{
+    
+    }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

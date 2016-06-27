@@ -7,6 +7,7 @@ target 'ReferenceProject_iOS' do
 pod 'AFNetworking', '~> 3.0'
 pod 'MBProgressHUD', '~> 0.9.2'
 pod 'MCLocalization', '~> 1.1'
+pod 'Google/SignIn'
 
 end
 

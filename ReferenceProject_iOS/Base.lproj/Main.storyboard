@@ -795,6 +795,7 @@
                         <segue destination="ZYL-AK-Zzv" kind="show" identifier="ThemeSegue" id="4Bg-G9-aV5"/>
                         <segue destination="Sht-HD-Udm" kind="show" identifier="LocalizeSegue" id="cvd-4o-Nmr"/>
                         <segue destination="yqW-yn-d6Q" kind="show" identifier="hometofacebook" id="FFa-qW-h9f"/>
+                        <segue destination="cFO-FG-SNZ" kind="show" identifier="homeTogoogle" id="rys-Ur-fRe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -882,6 +883,78 @@
             </objects>
             <point key="canvasLocation" x="54" y="184"/>
         </scene>
+        <!--Google View Controller-->
+        <scene sceneID="aca-r5-xCc">
+            <objects>
+                <viewController id="cFO-FG-SNZ" customClass="GoogleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LKP-HE-WoC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jz9-ke-qXn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ro-rX-7xv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aO-qu-DfC">
+                                <rect key="frame" x="190" y="480" width="237" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="1Ef-Q3-ObL"/>
+                                    <constraint firstAttribute="width" constant="237" id="U0k-J8-DAc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gplus"/>
+                                <connections>
+                                    <action selector="googleLogin:" destination="cFO-FG-SNZ" eventType="touchUpInside" id="XKp-yR-pve"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bGd-mG-y4s">
+                                <rect key="frame" x="263" y="95" width="90" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="dGD-bm-nXt"/>
+                                    <constraint firstAttribute="height" constant="71" id="pAz-hS-HFa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uv-TQ-R5u">
+                                <rect key="frame" x="92" y="215" width="417" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="417" id="uCo-0e-mc1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G2-hu-U9T">
+                                <rect key="frame" x="92" y="264" width="417" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="417" id="472-iW-0SO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5G2-hu-U9T" firstAttribute="top" secondItem="6uv-TQ-R5u" secondAttribute="bottom" constant="28" id="4CK-86-SUt"/>
+                            <constraint firstItem="6uv-TQ-R5u" firstAttribute="centerX" secondItem="3Ro-rX-7xv" secondAttribute="centerX" id="6YX-Zi-xIL"/>
+                            <constraint firstItem="bGd-mG-y4s" firstAttribute="top" secondItem="LKP-HE-WoC" secondAttribute="bottom" constant="31" id="7ec-nc-cXr"/>
+                            <constraint firstItem="9aO-qu-DfC" firstAttribute="centerX" secondItem="3Ro-rX-7xv" secondAttribute="centerX" constant="8.5" id="8YY-U8-sAq"/>
+                            <constraint firstItem="6uv-TQ-R5u" firstAttribute="top" secondItem="bGd-mG-y4s" secondAttribute="bottom" constant="49" id="cU4-Mp-CjH"/>
+                            <constraint firstItem="9aO-qu-DfC" firstAttribute="centerY" secondItem="3Ro-rX-7xv" secondAttribute="centerY" constant="204.5" id="d0F-D3-JFr"/>
+                            <constraint firstItem="5G2-hu-U9T" firstAttribute="centerX" secondItem="3Ro-rX-7xv" secondAttribute="centerX" id="oml-bL-GbP"/>
+                            <constraint firstItem="bGd-mG-y4s" firstAttribute="centerX" secondItem="3Ro-rX-7xv" secondAttribute="centerX" constant="8" id="u9B-Sy-h6Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullLabel" destination="5G2-hu-U9T" id="8im-z4-zQW"/>
+                        <outlet property="googlebtn" destination="9aO-qu-DfC" id="8xN-oU-oJe"/>
+                        <outlet property="googleimg" destination="bGd-mG-y4s" id="l3F-K5-o3a"/>
+                        <outlet property="userLabel" destination="6uv-TQ-R5u" id="heq-gM-ybj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-EQ-UOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="-705"/>
+        </scene>
         <!--Facebook View Controller-->
         <scene sceneID="6zO-dD-TTN">
             <objects>
@@ -906,14 +979,14 @@
                                     <action selector="FacebookLogin:" destination="yqW-yn-d6Q" eventType="touchUpInside" id="DEC-oR-MtY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-jZ-4mC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-jZ-4mC">
                                 <rect key="frame" x="254" y="97" width="93" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="EjN-5w-mOV"/>
                                     <constraint firstAttribute="width" constant="93" id="NhN-hI-4xQ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-Au-2AV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-Au-2AV">
                                 <rect key="frame" x="89" y="220" width="437" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="437" id="Ve3-W9-wmm"/>
@@ -922,7 +995,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-QG-7WO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-QG-7WO">
                                 <rect key="frame" x="89" y="255" width="437" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="437" id="lHt-Ep-ZUK"/>
@@ -958,6 +1031,7 @@
     </scenes>
     <resources>
         <image name="background" width="700" height="490"/>
-        <image name="fbook" width="700" height="490"/>
+        <image name="fbook" width="278" height="47"/>
+        <image name="gplus" width="280" height="48"/>
     </resources>
 </document>

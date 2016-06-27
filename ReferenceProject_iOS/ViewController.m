@@ -91,7 +91,7 @@
            [self performSegueWithIdentifier:@"hometofacebook" sender:indexPath];
             break;
         case 1:
-            
+            [self performSegueWithIdentifier:@"homeTogoogle" sender:indexPath];
             break;
         case 2:
             //[self performSegueWithIdentifier:@"" sender:indexPath];
