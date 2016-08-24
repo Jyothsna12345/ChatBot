@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lJB-qF-ufr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -364,7 +364,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v03-9B-oNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="963"/>
+            <point key="canvasLocation" x="1590" y="1667"/>
+        </scene>
+        <!--Image Compression-->
+        <scene sceneID="q34-QL-ppG">
+            <objects>
+                <viewController id="Ydp-Kl-u5m" customClass="ImageCompression" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hG0-eY-lfd"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bs-ra-d8k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ohi-hY-txD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Before Compression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAA-rE-QbC">
+                                <rect key="frame" x="30" y="84" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size of image is ..  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="101" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqb-Wr-rOA">
+                                <rect key="frame" x="30" y="108" width="143" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image after Compression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewo-Ja-zY4">
+                                <rect key="frame" x="20" y="290" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size of image is ..  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIu-BQ-p6A">
+                                <rect key="frame" x="30" y="313" width="143" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LNf-53-ljA">
+                                <rect key="frame" x="20" y="343" width="530" height="236"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-xs-nUg">
+                                <rect key="frame" x="30" y="141" width="520" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="ikP-8n-h4i"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87500923871994019" green="0.9660605788230896" blue="0.9151037335395813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ewo-Ja-zY4" firstAttribute="centerY" secondItem="Ohi-hY-txD" secondAttribute="centerY" id="0te-4d-CpL"/>
+                            <constraint firstItem="ewo-Ja-zY4" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="20" id="24B-ek-weu"/>
+                            <constraint firstItem="LNf-53-ljA" firstAttribute="top" secondItem="DIu-BQ-p6A" secondAttribute="bottom" constant="9" id="9jH-is-g5P"/>
+                            <constraint firstItem="oqb-Wr-rOA" firstAttribute="top" secondItem="cAA-rE-QbC" secondAttribute="bottom" constant="3" id="BUW-JR-A1e"/>
+                            <constraint firstItem="DIu-BQ-p6A" firstAttribute="top" secondItem="ewo-Ja-zY4" secondAttribute="bottom" constant="2" id="DhE-d3-jPf"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oqb-Wr-rOA" secondAttribute="trailing" constant="8" id="HyE-z8-G2y"/>
+                            <constraint firstAttribute="trailing" secondItem="LNf-53-ljA" secondAttribute="trailing" constant="50" id="Jxf-AR-P4y"/>
+                            <constraint firstItem="oqb-Wr-rOA" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="30" id="KIS-Ne-YjY"/>
+                            <constraint firstItem="LNf-53-ljA" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="20" id="MQI-cb-WBU"/>
+                            <constraint firstAttribute="trailing" secondItem="PTr-xs-nUg" secondAttribute="trailing" constant="50" id="Ps1-ji-Uh0"/>
+                            <constraint firstItem="PTr-xs-nUg" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="30" id="Z5c-4W-Xbr"/>
+                            <constraint firstItem="ewo-Ja-zY4" firstAttribute="centerX" secondItem="Ohi-hY-txD" secondAttribute="centerX" id="cJg-WC-pXY"/>
+                            <constraint firstItem="cAA-rE-QbC" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="30" id="fYu-gC-Sfw"/>
+                            <constraint firstItem="DIu-BQ-p6A" firstAttribute="leading" secondItem="Ohi-hY-txD" secondAttribute="leading" constant="30" id="gqP-sS-Ngc"/>
+                            <constraint firstItem="cAA-rE-QbC" firstAttribute="top" secondItem="hG0-eY-lfd" secondAttribute="bottom" constant="20" id="mfS-2Y-rEl"/>
+                            <constraint firstItem="PTr-xs-nUg" firstAttribute="top" secondItem="oqb-Wr-rOA" secondAttribute="bottom" constant="12" id="nIb-3G-sDB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cAA-rE-QbC" secondAttribute="trailing" constant="8" id="nwx-HX-zED"/>
+                            <constraint firstItem="3bs-ra-d8k" firstAttribute="top" secondItem="LNf-53-ljA" secondAttribute="bottom" constant="21" id="otE-TX-pzj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewbeforeCompression" destination="PTr-xs-nUg" id="dbI-9W-guV"/>
+                        <outlet property="imageaftercompression" destination="LNf-53-ljA" id="Br6-Zg-Dcf"/>
+                        <outlet property="sizeaftercompresssion" destination="DIu-BQ-p6A" id="GJD-Rn-5p6"/>
+                        <outlet property="sizebeforeCompression" destination="oqb-Wr-rOA" id="2BZ-0b-Kba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hW-MF-qTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1395" y="168"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="1yl-LO-0BP">
@@ -796,6 +877,7 @@
                         <segue destination="Sht-HD-Udm" kind="show" identifier="LocalizeSegue" id="cvd-4o-Nmr"/>
                         <segue destination="yqW-yn-d6Q" kind="show" identifier="hometofacebook" id="FFa-qW-h9f"/>
                         <segue destination="cFO-FG-SNZ" kind="show" identifier="homeTogoogle" id="rys-Ur-fRe"/>
+                        <segue destination="Ydp-Kl-u5m" kind="show" identifier="imageCompression" id="scN-f2-EP0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

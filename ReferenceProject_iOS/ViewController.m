@@ -121,6 +121,7 @@
 
             break;
         case 9:
+            [self performSegueWithIdentifier:@"imageCompression" sender:indexPath];
             
 
             break;

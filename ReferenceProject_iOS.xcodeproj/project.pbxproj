@@ -32,6 +32,8 @@
 		86CED1CE1D1D0BC30012A41D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */; };
 		86CED1CF1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */; };
 		86CED1D01D1D0BC30012A41D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CED1CC1D1D0BC30012A41D /* FBSDKShareKit.framework */; };
+		86FF8EF91D6DA7FD00CE4F43 /* ImageCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF8EF81D6DA7FD00CE4F43 /* ImageCompression.m */; };
+		86FF8EFB1D6DAC8D00CE4F43 /* image2Mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86FF8EFA1D6DAC8D00CE4F43 /* image2Mb.jpg */; };
 		9DC9D744197D4DFE83DF07EE /* libPods-ReferenceProject_iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E529970401CD5B3F176A5B5 /* libPods-ReferenceProject_iOSUITests.a */; };
 		DA51EF791D1BE9BB0063E3C0 /* Kannada.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF781D1BE9BB0063E3C0 /* Kannada.json */; };
 		DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */ = {isa = PBXBuildFile; fileRef = DA51EF7A1D1BE9C90063E3C0 /* English.json */; };
@@ -106,6 +108,9 @@
 		86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		86CED1CC1D1D0BC30012A41D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		86FF8EF71D6DA7FD00CE4F43 /* ImageCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompression.h; sourceTree = "<group>"; };
+		86FF8EF81D6DA7FD00CE4F43 /* ImageCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompression.m; sourceTree = "<group>"; };
+		86FF8EFA1D6DAC8D00CE4F43 /* image2Mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2Mb.jpg; sourceTree = "<group>"; };
 		A19EC541F2E68C0B130D09A6 /* Pods-ReferenceProject_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOSUITests/Pods-ReferenceProject_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B808E380C7682FD87B14FCA5 /* libPods-ReferenceProject_iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08B09BB6E2AF5EC7A553E19 /* Pods-ReferenceProject_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOS/Pods-ReferenceProject_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +186,7 @@
 		096A63C11D1A9A4A00B08AFA /* ReferenceProject_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				86FF8EF61D6DA7C000CE4F43 /* ImageCompression */,
 				86CED1C91D1D0BC30012A41D /* FBSDKCoreKit.framework */,
 				86CED1CA1D1D0BC30012A41D /* FBSDKLoginKit.framework */,
 				86CED1CB1D1D0BC30012A41D /* FBSDKMessengerShareKit.framework */,
@@ -247,6 +253,16 @@
 				A19EC541F2E68C0B130D09A6 /* Pods-ReferenceProject_iOSUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		86FF8EF61D6DA7C000CE4F43 /* ImageCompression */ = {
+			isa = PBXGroup;
+			children = (
+				86FF8EFA1D6DAC8D00CE4F43 /* image2Mb.jpg */,
+				86FF8EF71D6DA7FD00CE4F43 /* ImageCompression.h */,
+				86FF8EF81D6DA7FD00CE4F43 /* ImageCompression.m */,
+			);
+			name = ImageCompression;
 			sourceTree = "<group>";
 		};
 		90A12FA8418B521A466018FE /* Frameworks */ = {
@@ -472,6 +488,7 @@
 				096A63CD1D1A9A4A00B08AFA /* Main.storyboard in Resources */,
 				DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */,
 				DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */,
+				86FF8EFB1D6DAC8D00CE4F43 /* image2Mb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +638,7 @@
 			files = (
 				86B49AD01D20F93600997AB9 /* GoogleViewController.m in Sources */,
 				DA9CDBDF1D1BB90A008B7E86 /* CustomFontViewController.m in Sources */,
+				86FF8EF91D6DA7FD00CE4F43 /* ImageCompression.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				86CED1C81D1D0ACD0012A41D /* FacebookViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
