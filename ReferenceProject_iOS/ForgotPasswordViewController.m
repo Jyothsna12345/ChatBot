@@ -42,7 +42,8 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)forgotPasswordButtonAction:(id)sender {
+- (IBAction)forgotPasswordButtonAction:(id)sender
+{
 
         if (forgotPasswordView == nil)
         {

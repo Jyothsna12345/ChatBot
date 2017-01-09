@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    collectionArr = @[@"Facebook",@"Google+",@"Maps",@"Forget Password",@"Authentication",@"Change Password",@"Sign Up",@"Image Upload",@"File Upload",@"Image Compression",@"CustomFont",@"Theme",@"LocaliZation",].mutableCopy;
+    collectionArr = @[@"Facebook",@"Google+",@"Maps",@"Forget Password",@"Authentication",@"Change Password",@"Sign Up",@"Image Upload",@"File Upload",@"Image Compression",@"CustomFont",@"Theme",@"LocaliZation",@"ChatBot"].mutableCopy;
     
 
 
@@ -133,6 +133,9 @@
             break;
         case 12:
              [self performSegueWithIdentifier:@"LocalizeSegue" sender:indexPath];
+            break;
+        case 13:
+            [self performSegueWithIdentifier:@"toChatBotViewController" sender:indexPath];
             break;
         default:
             break;

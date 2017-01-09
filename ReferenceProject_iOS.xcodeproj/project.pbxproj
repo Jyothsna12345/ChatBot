@@ -24,7 +24,9 @@
 		096B53B31D1BE1BF00004D18 /* ForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53B11D1BE1BF00004D18 /* ForgotPasswordView.m */; };
 		096B53B41D1BE1BF00004D18 /* ForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096B53B21D1BE1BF00004D18 /* ForgotPasswordView.xib */; };
 		096B53B71D1BECAE00004D18 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 096B53B61D1BECAE00004D18 /* Postman.m */; };
-		096B53BB1D1BEE9000004D18 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 096B53BA1D1BEE9000004D18 /* Info.plist */; };
+		8644F95C1E236B2900E0C7C5 /* ChatBotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644F95B1E236B2900E0C7C5 /* ChatBotTableViewCell.m */; };
+		8644F95F1E236B4600E0C7C5 /* ChatBotModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644F95E1E236B4600E0C7C5 /* ChatBotModelClass.m */; };
+		86AAC3911E1F5AF7008991F6 /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AAC3901E1F5AF7008991F6 /* ChatBotViewController.m */; };
 		86B49ACD1D20F81200997AB9 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 86B49ACC1D20F81200997AB9 /* GoogleService-Info (3).plist */; };
 		86B49AD01D20F93600997AB9 /* GoogleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B49ACF1D20F93600997AB9 /* GoogleViewController.m */; };
 		86CED1C81D1D0ACD0012A41D /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CED1C71D1D0ACD0012A41D /* FacebookViewController.m */; };
@@ -99,6 +101,12 @@
 		105046BB3C2A6D7DA3CF95FA /* libPods-ReferenceProject_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E529970401CD5B3F176A5B5 /* libPods-ReferenceProject_iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceProject_iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B25256DD37418DC9D7FB2A1 /* Pods-ReferenceProject_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceProject_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceProject_iOSTests/Pods-ReferenceProject_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8644F95A1E236B2900E0C7C5 /* ChatBotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotTableViewCell.h; sourceTree = "<group>"; };
+		8644F95B1E236B2900E0C7C5 /* ChatBotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotTableViewCell.m; sourceTree = "<group>"; };
+		8644F95D1E236B4600E0C7C5 /* ChatBotModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotModelClass.h; sourceTree = "<group>"; };
+		8644F95E1E236B4600E0C7C5 /* ChatBotModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotModelClass.m; sourceTree = "<group>"; };
+		86AAC38F1E1F5AF7008991F6 /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
+		86AAC3901E1F5AF7008991F6 /* ChatBotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewController.m; sourceTree = "<group>"; };
 		86B49ACC1D20F81200997AB9 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
 		86B49ACE1D20F93600997AB9 /* GoogleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleViewController.h; sourceTree = "<group>"; };
 		86B49ACF1D20F93600997AB9 /* GoogleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleViewController.m; sourceTree = "<group>"; };
@@ -206,8 +214,9 @@
 				DA9CDBE51D1BBB5E008B7E86 /* ThemeChange */,
 				DA9CDBE31D1BBAF7008B7E86 /* CustomFont */,
 				DA9CDBE41D1BBB06008B7E86 /* Localization */,
-				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
+				86AAC3921E1F5B07008991F6 /* ChatBot */,
 				096A63CE1D1A9A4A00B08AFA /* Assets.xcassets */,
+				096A63CB1D1A9A4A00B08AFA /* Main.storyboard */,
 				096A63D01D1A9A4A00B08AFA /* LaunchScreen.storyboard */,
 				096B53BA1D1BEE9000004D18 /* Info.plist */,
 				86B49ACC1D20F81200997AB9 /* GoogleService-Info (3).plist */,
@@ -253,6 +262,19 @@
 				A19EC541F2E68C0B130D09A6 /* Pods-ReferenceProject_iOSUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		86AAC3921E1F5B07008991F6 /* ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				86AAC38F1E1F5AF7008991F6 /* ChatBotViewController.h */,
+				86AAC3901E1F5AF7008991F6 /* ChatBotViewController.m */,
+				8644F95A1E236B2900E0C7C5 /* ChatBotTableViewCell.h */,
+				8644F95B1E236B2900E0C7C5 /* ChatBotTableViewCell.m */,
+				8644F95D1E236B4600E0C7C5 /* ChatBotModelClass.h */,
+				8644F95E1E236B4600E0C7C5 /* ChatBotModelClass.m */,
+			);
+			name = ChatBot;
 			sourceTree = "<group>";
 		};
 		86FF8EF61D6DA7C000CE4F43 /* ImageCompression */ = {
@@ -436,11 +458,12 @@
 		096A63B71D1A9A4A00B08AFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = vmoksha;
 				TargetAttributes = {
 					096A63BE1D1A9A4A00B08AFA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QGMN7468R5;
 					};
 					096A63D71D1A9A4A00B08AFA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -484,7 +507,6 @@
 				096A63D21D1A9A4A00B08AFA /* LaunchScreen.storyboard in Resources */,
 				096A63CF1D1A9A4A00B08AFA /* Assets.xcassets in Resources */,
 				096B53B41D1BE1BF00004D18 /* ForgotPasswordView.xib in Resources */,
-				096B53BB1D1BEE9000004D18 /* Info.plist in Resources */,
 				096A63CD1D1A9A4A00B08AFA /* Main.storyboard in Resources */,
 				DA51EF7D1D1BE9DC0063E3C0 /* Hindi.json in Resources */,
 				DA51EF7B1D1BE9C90063E3C0 /* English.json in Resources */,
@@ -641,11 +663,14 @@
 				86FF8EF91D6DA7FD00CE4F43 /* ImageCompression.m in Sources */,
 				096B53AC1D1BB36200004D18 /* ChangePasswordViewController.m in Sources */,
 				86CED1C81D1D0ACD0012A41D /* FacebookViewController.m in Sources */,
+				86AAC3911E1F5AF7008991F6 /* ChatBotViewController.m in Sources */,
 				DA9CDBDC1D1BB8EE008B7E86 /* ThemeViewController.m in Sources */,
 				096A63CA1D1A9A4A00B08AFA /* ViewController.m in Sources */,
 				096B53B31D1BE1BF00004D18 /* ForgotPasswordView.m in Sources */,
+				8644F95F1E236B4600E0C7C5 /* ChatBotModelClass.m in Sources */,
 				096A63C71D1A9A4A00B08AFA /* AppDelegate.m in Sources */,
 				096A63F71D1AA42E00B08AFA /* AuthentationViewController.m in Sources */,
+				8644F95C1E236B2900E0C7C5 /* ChatBotTableViewCell.m in Sources */,
 				096B53A51D1BAE1500004D18 /* Constant.m in Sources */,
 				096B53AF1D1BB38300004D18 /* ForgotPasswordViewController.m in Sources */,
 				DA9CDBE21D1BB927008B7E86 /* LocalizeViewController.m in Sources */,
@@ -720,8 +745,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -764,8 +791,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -793,6 +822,7 @@
 			baseConfigurationReference = ED946E4079537E97BCE88559 /* Pods-ReferenceProject_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QGMN7468R5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceProject_iOS",
@@ -810,6 +840,7 @@
 			baseConfigurationReference = D08B09BB6E2AF5EC7A553E19 /* Pods-ReferenceProject_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QGMN7468R5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ReferenceProject_iOS",

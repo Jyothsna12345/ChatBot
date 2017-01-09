@@ -41,9 +41,7 @@
     // showing the image and size after compressing
     UIImage *compressedImage =  [self compressImage:bImage];
     self.imageaftercompression.image = compressedImage;
-    
     NSData *imageData = UIImageJPEGRepresentation(compressedImage, 1);
-    
     self.sizeaftercompresssion.text = [NSString stringWithFormat:@"size of image after compression is %lu Kb",([imageData length]/1024)];
 }
 
